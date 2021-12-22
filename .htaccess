@@ -1,0 +1,7 @@
+Options All -Indexes
+
+RewriteEngine on
+RewriteRule ^([0-9a-zA-Z-]+)$ index.php?action=$1
+
+ErrorDocument 404 http://localhost/03PROYECTOCEM-TEST/pagina-no-encontrada
+ErrorDocument 403 http://localhost/03PROYECTOCEM-TEST/acceso-restringido
